@@ -11,7 +11,7 @@ module.exports = merge(common, {
   output: {
     path: paths.build,
     publicPath: '/',
-    filename: '[name].[contenthash].bundle.js',
+    filename: '[name].bundle.js',
   },
   plugins: [
     /**
@@ -45,6 +45,7 @@ module.exports = merge(common, {
       },
     ],
   },
+  watch: true,
 
   /**
    * Optimization

@@ -8,7 +8,7 @@ Minimal Webpack 4 boilerplate with Babel, Sass, ESLint, Hot Module Replacement, 
 
 ```
 git clone git@github.com:taniarascia/webpack-boilerplate
-npm i
+yarn i
 ```
 
 ## Usage
@@ -16,7 +16,7 @@ npm i
 ### Development server
 
 ```bash
-npm start
+yarn start
 ```
 
 You can view the development server at `localhost:8080`.
@@ -24,13 +24,13 @@ You can view the development server at `localhost:8080`.
 ### Production build
 
 ```bash
-npm run build
+yarn run build
 ```
 
-> Note: Install [http-server](https://www.npmjs.com/package/http-server) globally to deploy a simple server.
+> Note: Install [http-server](https://www.yarnjs.com/package/http-server) globally to deploy a simple server.
 
 ```bash 
-npm i -g http-server
+yarn i -g http-server
 ```
 
 You can view the deploy by creating a server in `dist`. 
@@ -59,7 +59,7 @@ cd dist && http-server
 
 ### Babel
 
-- [`@babel/core`](https://www.npmjs.com/package/@babel/core) - Transpile ES6+ to backwards compatible JavaScript.
+- [`@babel/core`](https://www.yarnjs.com/package/@babel/core) - Transpile ES6+ to backwards compatible JavaScript.
 - [`@babel/plugin-proposal-class-properties`](https://babeljs.io/docs/en/babel-plugin-proposal-class-properties) - Use properties directly on a class.
 - [`@babel/preset-env`](https://babeljs.io/docs/en/babel-preset-env) - Smart defaults for Babel.
 - [`babel-eslint`](https://github.com/babel/babel-eslint) - Lint Babel code.
@@ -72,7 +72,7 @@ cd dist && http-server
   - [`node-sass`](https://github.com/sass/node-sass) - Node Sass.
 - [`postcss-loader`](https://webpack.js.org/loaders/postcss-loader/) - Process CSS with PostCSS.
   - [`cssnano`](https://github.com/cssnano/cssnano) - Optimize and compress PostCSS.
-  - [`postcss-preset-env`](https://www.npmjs.com/package/postcss-preset-env) - Sensible defaults for PostCSS.
+  - [`postcss-preset-env`](https://www.yarnjs.com/package/postcss-preset-env) - Sensible defaults for PostCSS.
 - [`css-loader`](https://webpack.js.org/loaders/css-loader/) - Resolves CSS imports into JS.
 - [`style-loader`](https://webpack.js.org/loaders/style-loader/) - Inject CSS into the DOM.
 - [`eslint-loader`](https://webpack.js.org/loaders/eslint-loader/) - Use ESLint with Webpack.

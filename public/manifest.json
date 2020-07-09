@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "UpWork proposal scrapper",
+  "description": "silence is golden.",
+  "version": "9.0",
+  "content_security_policy": "script-src 'self' https://www.upwork.com/ https://assets.static-upwork.com; object-src 'self'",
+  "permissions": [
+    "activeTab",
+    "identity",
+    "storage",
+    "*://www.upwork.com/*",
+    "*://www.googleapis.com/*",
+    "https://bigquery.googleapis.com/bigquery/*"
+  ],
+  "options_ui": {
+    "page": "index.html",
+    "open_in_tab": true
+  },
+  "background": {
+    "scripts": [
+      "main.bundle.js",
+      "runtime.bundle.js"
+    ],
+    "persistent": false
+  }
+}

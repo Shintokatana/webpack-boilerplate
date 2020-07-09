@@ -1,5 +1,4 @@
 const paths = require('./paths')
-const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
@@ -33,7 +32,7 @@ module.exports = {
      *
      * Removes/cleans build folders and unused assets when rebuilding.
      */
-    new CleanWebpackPlugin(),
+    // new CleanWebpackPlugin(),
 
     /**
      * CopyWebpackPlugin
@@ -43,7 +42,6 @@ module.exports = {
     new CopyWebpackPlugin([
       {
         from: paths.static,
-        to: 'assets',
         ignore: ['*.DS_Store'],
       },
     ]),
